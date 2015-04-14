@@ -1,0 +1,27 @@
+div#rectangle {
+    //border-radius: 8px;
+    margin-top: 10px; 
+    margin : 0 auto;
+    width: 100%;
+    height: 100%;
+    //background-image: linear-gradient(lightgrey, #404040 );
+    //background: #4196c9;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #606060 ;
+}
+
+div#rectangle1 {
+    //border-radius: 8px;
+    top: -900px;
+    //z-index: 2;
+    //margin : 0 auto;
+    width: 100%;
+    height: 5000px;
+    //background-image: linear-gradient(lightgrey, #404040 );
+    //background: #4196c9;
+    //border-style: solid;
+    //border-width: 0px;
+    border-color: #606060 ;
+    
+}

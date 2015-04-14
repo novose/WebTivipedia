@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>TiVine Technologies</title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+    
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    
+    <!-- JS/Jquery -->
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/hmac-sha512.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="recup_api.js" ></script>
+    <script src="recup_api2.js" ></script>
+    <script src="all_channels.js" ></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60290517-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  
+  <body id="page-top" class="index" onload="programme_tv()">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- RESPONSIVE -->
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	  <a class="navbar-brand page-scroll" href="#page-top">TiVine Technologies</a>
+        </div>
+	
+        <!-- liens de navigation, forms, et scroll -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#services">Accueil</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#portfolio">Chaines</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about">A propos</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#team">Equipe</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in"></div>
+          <div class="intro-heading"></div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Quelques chiffres -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">TiVine Technologies</h2>
+            <h3 class="section-subheading text-muted">La télévision augmentée</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"><img src="img/logos/poeple.png" style="width: 60px; margin-top:-90px" class="img-responsive img-centered"></img></i>
+              
+            </span>
+            <h4 class="service-heading">960,983 personnalités</h4>
+            <p class="text-muted"></p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"><img src="img/logos/local.png" style="width: 60px; margin-top:-87px" class="img-responsive img-centered"></img></i>
+              
+            </span>
+            <h4 class="service-heading">584,847 lieux</h4>
+            <p class="text-muted"></p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"><img src="img/logos/theme.png" style="width: 60px; margin-top:-90px" class="img-responsive img-centered"></img></i>
+              
+            </span>
+            <h4 class="service-heading">122,954 thèmes</h4>
+            <p class="text-muted"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- grille de chaine de base -->
+    <section id="portfolio" class="bg-light-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Chaines</h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+        <div class="row" id="all_channel">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" onclick="launch_all(1)">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/chaines/01.png" class="img-responsive" style="margin:auto; width:60%">
+            </a>
+	    
+            <div class="portfolio-caption" id="chaine0">
+              <p class="text-muted">Maintenant sur TF1</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal" onclick="launch_all(2)">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/chaines/02.png" class="img-responsive" style="margin:auto; width:60%">
+            </a>
+            <div class="portfolio-caption" id="chaine1">
+              <p class="text-muted">Maintenant sur France 2</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal" onclick="launch_all(3)">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/chaines/03.png" class="img-responsive" style="margin:auto; width:60%">
+            </a>
+            <div class="portfolio-caption" id="chaine2">
+              <h4></h4>
+              <p class="text-muted">Maintenant sur France 3</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal" onclick="launch_all(4)">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/chaines/04.png" class="img-responsive" style="margin:auto; width:60%">
+            </a>
+            <div class="portfolio-caption" id="chaine3">
+              
+              <p class="text-muted">Maintenant sur Canal+</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal" onclick="launch_all(5)">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/chaines/05.png" class="img-responsive" style="margin:auto; width:60%">
+            </a>
+            <div class="portfolio-caption" id="chaine4">
+              <h4></h4>
+              <p class="text-muted">Maintenant sur France 5</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item" id="last_channel">
+            <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal" onclick="launch_all(6)" id="link" style="height:217px">
+              <div class="portfolio-hover" style="height:217px">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/chaines/06.png" class="img-responsive" style="margin:auto; width:217px;" id="image">
+            </a>
+            <div class="portfolio-caption" id="chaine5">
+              <h4></h4>
+              <p class="text-muted" id="namechannel">Maintenant sur M6</p>
+            </div>
+          </div>
+	  <div id="div_channel">
+	    <a id="clic_channel" onclick="view_all_channel();programme_tv2()"><p id="view" align="center" style="font-size:50px; font-family:Kaushan Script">Voir toutes les chaines<p></a>
+	  </div>
+	</div>
+      </div>
+    </section>
+    
+    <!-- Section à propos -->
+    <section id="about">
+      <div class="container">
+	<div class="row">
+	  <div class="col-lg-12 text-center">
+            <h2 class="section-heading">A PROPOS</h2>
+            <h3 class="section-subheading text-muted">TiVine Technologies offre à chaque téléspectateur sa propre « télévision augmentée »</h3>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4></h4>
+                    <h4 class="subheading">Depuis combien de temps avez vous commencé ce projet ?</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">La SAS TiVine Technologies a été créée par ses quatre associés fondateurs, experts du domaine de l’IT et de l’audiovisuel, en Juin 2013, après une gestation de plus de 18 mois.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="img/about/ana.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4></h4>
+                    <h4 class="subheading">Quelles sont les technologies que vous utilisez ?</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Le cœur technologique de notre offre, la Plateforme TiVine, repose sur des techniques innovantes d’analyse sémantique automatique, afin de réaliser l’analyse continue du flux télévisuel, l’identification de méta-données pertinentes (personnalités à l’écran, sujets évoqués, etc.), et l’agrégation de contenus et de services contextuels.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4></h4>
+                    <h4 class="subheading">A quel besoin répondez vous ?</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Face à l’explosion de l’offre télévisuelle, le téléspectateur est en attente d’informations et de services pour l’aider à choisir son programme, s’informer en continu sur son contenu, et bien sûr se distraire. Notre offre permet à chaque téléspectateur d’accéder d’un simple clic aux réponses à toutes ces attentes.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4></h4>
+                    <h4 class="subheading">Où voyez-vous l’entreprise dans un an ?</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">TiVine Technologies est en plein développement technologique et commercial, visant à renforcer d’ici un an notre portefeuille d’offre et de clients.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>To
+                    <br>Be
+                    <br>Continued</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+	</div>
+      </div>
+    </section>
+    
+    <!-- l'équipe -->
+    <section id="team" class="bg-light-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Notre equipe</h2>
+            <h3 class="section-subheading text-muted">Que des winners</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img src="img/team/nicolas.png" class="img-responsive img-circle" alt="">
+              <h4>N.Mercouroff</h4>
+              <p class="text-muted">PRÉSIDENT, FONDATEUR DE TIVINE TECHNOLOGIES</p>
+              <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img src="img/team/marko.png" class="img-responsive img-circle" alt="">
+              <h4>M.Pereira</h4>
+              <p class="text-muted">RESPONSABLE DEVELOPPEMENT</p>
+              <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img src="img/team/co_david.png" class="img-responsive img-circle" alt="">
+              <h4>D.Silva</h4>
+              <p class="text-muted">RESP.DEVELOPPEMENTS SYSTEMES</p>
+              <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+	  <div class="col-sm-4">
+	    <div class="team-member">
+              <img src="img/team/yannickstephan.png" class="img-responsive img-circle" alt="">
+              <h4>Y.Stephan</h4>
+              <p class="text-muted">RESP.DEVELOPPEMENTS MOBILE</p>
+              <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+	    </div>
+          </div>
+	  <div class="col-sm-4">
+            <div class="team-member">
+              <img src="img/team/jason.png" class="img-responsive img-circle" alt="">
+              <h4>J.Desavoye</h4>
+              <p class="text-muted">RESPONSABLE MARKETING DIGITAL</p>
+              <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+	  </div>
+	  <div class="col-sm-4">
+	    <div class="team-member">
+	      <img src="img/team/co-un.png" class="img-responsive img-circle" alt="">
+              <h4>B. de Corn</h4>
+              <p class="text-muted">MEMBRE DU BOARD, CO-FONDATEUR</p>
+              <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+	  <div class="col-sm-4">
+            <div class="team-member">
+              <img src="img/team/co-deux.png" class="img-responsive img-circle" alt="">
+              <h4>D. Pagnac</h4>
+              <p class="text-muted">MEMBRE DU BOARD, CO-FONDATEUR</p>
+              <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+	  <div class="col-sm-4">
+            <div class="team-member">
+              <img src="img/team/co-trois.png" class="img-responsive img-circle" alt="">
+              <h4>P. Oriez</h4>
+              <p class="text-muted">MEMBRE DU BOARD, CO-FONDATEUR</p>
+              <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+	  
+	</div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center"></br></br></br></br>
+            <p class="large text-muted">Toute l'&eacute;quipe vous recommande l'application TiVipedia disponible en pied de page</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Partenaires -->
+    <aside class="clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <a target="_blank" href="http://mystartup.paris.fr/">
+              <img src="img/logos/support03.png" class="img-responsive img-centered" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="http://www.bpifrance.fr/" target="_blank">
+              <img src="img/logos/support04.png" class="img-responsive img-centered" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="http://entrepreneurs.telecom-paristech.fr/" target="_blank">
+              <img src="img/logos/support02.png" class="img-responsive img-centered" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="http://tivine.com/blog/?p=79" target="_blank">
+              <img src="img/logos/support05.png" class="img-responsive img-centered" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Contactez nous</h2>
+            <h3 class="section-subheading text-muted">Formulaire de contact</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form name="sentMessage" id="contactForm" novalidate>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="George Dupont" id="name" required data-validation-required-message="Veuillez renseigner votre nom et prenom *">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="utilisateur@domaine.fr" id="email" required data-validation-required-message="Veuillez renseigner votre adresse mail *">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="0601060106" id="phone" required data-validation-required-message="Veuillez renseigner votre numero de telephone *">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" placeholder="Votre message" id="message" required data-validation-required-message="Votre message *"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button type="submit" class="btn btn-xl">Envoyer</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">&copy;2015 by Tom PAOLINI, Lotfi OUROUBA, Serguey NOVOSELTSEV, Florian GROULEZ for TiVine Technologies</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li><a target="_blank" href="https://twitter.com/TiVineTechno"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.tivine.tivipedia"><i><img src="img/playstore.png" class="img-responsive img-centered" alt=""></i></a>
+              <li><a target="_blank" href="https://itunes.apple.com/fr/app/tivipedia-la-tele-augmentee/id868083729?mt=8"><i><img src="img/appstore.png" class="img-responsive img-centered" alt=""></i></a>
+              </li>
+              <li><a target="_blank" href="https://www.linkedin.com/company/tivine-technologies"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li><a href="#">Règles de confidentialité</a>
+              </li>
+              <li><a href="#">Conditions d'utilisation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- toutes les chaines -->
+        
+    <!-- tf1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_1">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+	    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- france 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_2">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- FR 3 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" background-color="#f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_3">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Portfolio Modal 4 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_4">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Portfolio Modal 5 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_5">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Portfolio Modal 6 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_6">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 7 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_7">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 8 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_8">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 9 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_9">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+7    </div>
+	<!-- Portfolio Modal 10 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-content" style="background-color: #f7f7f7">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+		<div class="rl">
+		</div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_10">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 11 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_11">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 12 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_12">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!-- Portfolio Modal 13 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_13">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 14 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_14">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 15 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_15">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 16 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_16">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 17 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_17">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 18 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal18" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_18">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 19 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal19" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_19">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 20 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal20" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_20">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- Portfolio Modal 21 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal21" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_21">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- Portfolio Modal 22 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal22" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_22">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 23 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal23" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_23">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 24 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal24" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_24">
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 25 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal25" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_25">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 26 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal26" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_26">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 27 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal27" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_27">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 28 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal28" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_28">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 29 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal29" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_29">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 30 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal30" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_30">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 31 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal31" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_31">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 32 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal32" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_32">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 33 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal33" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_33">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 34 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal34" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_34">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 35 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal35" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_35">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Portfolio Modal 36 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal36" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content" style="background-color: #f7f7f7">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body" id="chaine_info_36">
+                <!--img class="img-responsive" src="img/portfolio/roundicons-free.png"-->
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Changer de chaine</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+  </body>
+
+</html>
