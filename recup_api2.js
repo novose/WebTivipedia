@@ -2,8 +2,8 @@
 function programme_tv2()
 {   
     $part = 0;
-    $clientId = "10989846";
-    $clientKey = "ead6af33fba1a338591aa5c2689cd04d";
+    $clientId = "XXXXXXXXXXXXX";
+    $clientKey = "XXXXXXXXXXXXXXXXXXXXXXX";
     $url2 = "http://94.23.253.36:8080/TiVineWS_V1.0/GetAllContentForPart";
     $message = $url2+$part+$clientId;
     $hash = CryptoJS.HmacSHA512($message, $clientKey).toString();

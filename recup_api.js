@@ -3,8 +3,8 @@ function launch_all($i)
 {
     $part = 0;
     $channel = $i;
-    $clientKey = "ead6af33fba1a338591aa5c2689cd04d";
-    $clientId = "10989846";
+    $clientKey = "XXXXXXXXXXXXXXXXXXXXXXXXX";
+    $clientId = "XXXXXXXXX";
     $url2 = "http://94.23.253.36:8080/TiVineWS_V1.0/GetAllContentForPartAndChannel";
     $message = $url2+$part+$channel+$clientId;
     $hash = CryptoJS.HmacSHA512($message, $clientKey).toString();
@@ -34,8 +34,8 @@ function launch_all($i)
 /* Programme suivant */
 function prgm_next($i)
 {
-    $clientId = "10989846";
-    $clientKey = "ead6af33fba1a338591aa5c2689cd04d";
+    $clientId = "XXXXXXXXX";
+    $clientKey = "XXXXXXXXXXXXXXXXXXXXXXXXX";
     $url2 = "http://94.23.253.36:8080/TiVineWS_V1.0/GetAllContentForPart";
     $message = $url2+1+$clientId;
     $hash = CryptoJS.HmacSHA512($message, $clientKey).toString();
@@ -65,8 +65,8 @@ function prgm_next($i)
 /* Programme debut de soiree */
 function votre_soiree($i)
 {
-    $clientId = "10989846";
-    $clientKey = "ead6af33fba1a338591aa5c2689cd04d";
+    $clientId = "XXXXXXXXX";
+    $clientKey = "XXXXXXXXXXXXXXXXXXXXXXXXX";
     $url2 = "http://94.23.253.36:8080/TiVineWS_V1.0/GetAllContentForPart";
     $message = $url2+2+$clientId;
     $hash = CryptoJS.HmacSHA512($message, $clientKey).toString();
@@ -97,8 +97,8 @@ function votre_soiree($i)
 /* programme fin de soiree */
 function fin_de_soiree($i)
 {
-    $clientId = "10989846";
-    $clientKey = "ead6af33fba1a338591aa5c2689cd04d";
+    $clientId = "XXXXXXXXX";
+    $clientKey = "XXXXXXXXXXXXXXXXXXXXXXXXX";
     $url2 = "http://94.23.253.36:8080/TiVineWS_V1.0/GetAllContentForPart";
     $message = $url2+3+$clientId;
     $hash = CryptoJS.HmacSHA512($message, $clientKey).toString();
@@ -129,8 +129,8 @@ function get_all_content_for_part_and_channel($i)
 {
     $part = 0;
     $channel = $i;
-    $clientId = "10989846";
-    $clientKey = "ead6af33fba1a338591aa5c2689cd04d";
+    $clientId = "XXXXXXXXX";
+    $clientKey = "XXXXXXXXXXXXXXXXXXXXXXXXX";
     $url2 = "http://94.23.253.36:8080/TiVineWS_V1.0/GetAllContentForPartAndChannel";
     $message = $url2+$part+$channel+$clientId;
     $hash = CryptoJS.HmacSHA512($message, $clientKey).toString();
@@ -183,8 +183,8 @@ function description(data, count, $clientId, $clientKey)
 function programme_tv()
 {
     $part = 0;
-    $clientId = "10989846";
-    $clientKey = "ead6af33fba1a338591aa5c2689cd04d";
+    $clientId = "XXXXXXXXX";
+    $clientKey = "XXXXXXXXXXXXXXXXXXXXXXXXX";
     $url2 = "http://94.23.253.36:8080/TiVineWS_V1.0/GetAllContentForPart";
     $message = $url2+$part+$clientId;
     $hash = CryptoJS.HmacSHA512($message, $clientKey).toString();
